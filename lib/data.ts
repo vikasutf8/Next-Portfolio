@@ -7,7 +7,7 @@ import wordanalyticsImg from "@/public/wordanalytics.png";
 import BookHouse from "@/public/BookHouse.png";
 import RealEstateImg from "@/public/RealEstateImg.png";
 import ChattingImg from "@/public/chatting.png";
-import Blogging from "@/public/Blogging.png";
+import Blogging from "@/public/blogging.png";
 
 export const links = [
   {
