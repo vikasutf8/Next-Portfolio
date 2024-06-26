@@ -6,12 +6,18 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 type ProjectProps = (typeof projectsData)[number];
-
+const openLinkNewTab = (url: string) => {
+  window.open(url, "_blank");
+};
 export default function Project({
   title,
   description,
   tags,
   imageUrl,
+  projectUrl,
+  codeUrl,
+  videoLink,
+
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -30,7 +36,7 @@ export default function Project({
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+      <section className="bg-gray-100 max-w-[44rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
@@ -46,6 +52,35 @@ export default function Project({
               </li>
             ))}
           </ul>
+
+          <div className="flex gap-2 mt-4">
+            {projectUrl && (
+              <button
+                className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition duration-200"
+                onClick={() => openLinkNewTab(projectUrl)}
+              >
+                Live 
+              </button>
+            )}
+            {codeUrl && (
+              <button
+                className="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-lg transition duration-200"
+                onClick={() => openLinkNewTab(codeUrl)}
+              >
+                GitHub
+              </button>
+            )}
+            {videoLink && (
+              <button
+                className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition duration-200"
+                onClick={() => openLinkNewTab(videoLink)}
+              >
+                Demo
+              </button>
+            )}
+          </div>
+
+
         </div>
 
         <Image

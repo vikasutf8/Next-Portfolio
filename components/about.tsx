@@ -18,31 +18,26 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
+      
+{/* I am currently pursuing a B.Tech in Computer Science and Engineering. I am skilled as a full-stack web developer using the MERN stack and Next.js, primarily focused on backend development. I have also worked on the FUSION project at IIITDMJ as a backend developer and enhanced its UI/UX. */}
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+      I am currently pursuing a B.Tech in {" "}
+        <span className="font-medium">Computer Science and Engineering</span>,I am skilled as a {" "}<span className="font-medium">full-stack web developer using the MERN stack and Next.js</span>, primarily focused on backend development.{" "}
       </p>
-
+      <p className="mb-2">
+      {/* My favorite part of programming is the problem-solving aspect; I love the satisfaction of figuring out solutions. This passion has driven me to achieve rank 1 at GFG across IIITDMJ college and excel in problem-solving on platforms like LeetCode and GeeksforGeeks. */}
+        <span className="italic">My favorite part of programming</span> is the
+        problem-solving aspect. I love the satisfaction of figuring out solutions.{" "}This passion has driven me to <span className="font-medium"> achieve rank 1 at  </span><span className="underline">GFG </span>{" "} across college and excel in problem-solving on platforms like <span className="underline">LeetCode </span>{" "} and <span className="underline">GFG</span>.{" "} 
+      </p>
+      {/* Additionally, I have developed skills in project management as the team lead of the FUSION project, leading a team of 12 members from December 2023 to April 2024. I have also demonstrated leadership by serving as the Discipline Conveyor of a hostel with 500 students from July 2022 to May 2023. */}
+      <p className="mb-2">
+        <span className="italic">Additionally, I have developed skills</span>,in project management as <span className="font-medium">team lead of the FUSION project</span>, leading a team of 12 members from December 2023 to April 2024.{" "}
+      </p>
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+      I have also demonstrated leadership by serving as <span className="font-medium"> the Discipline Conveyor of a hostel </span>,with 500 students from July 2022 to May 2023.{" "} 
+      </p>
+      <p className="mt-4">
+        I am currently looking for a full-time position as a software developer.
       </p>
     </motion.section>
   );

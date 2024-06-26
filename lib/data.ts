@@ -3,8 +3,11 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import BookHouse from "@/public/BookHouse.png";
+import RealEstateImg from "@/public/RealEstateImg.png";
+import ChattingImg from "@/public/chatting.png";
+import Blogging from "@/public/Blogging.png";
 
 export const links = [
   {
@@ -35,73 +38,92 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Octanet Sevices",
+    location: "Remote",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I currently intern  in this company. I am working as a full-stack developer on this project.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Jun 2024 -Present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Fusion Project",
+    location: "IIITDMJ, India",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      " As a project lead, orchestrated website redesign with 2 designers and 5 developers, achieved a visually striking UI. Optimized Django integration, API caching, documented with reports, READMEs, SRS, ER diagrams etc.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "Dec 2023 - Apr 2024",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Bharat Intern",
+    location: "Remote, India ",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I'm worked as a frontend developer on enhancing UI/UX of website. My stack includes React, Redux,Tailwind CSS.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Aug 2022 - Oct 2022",
   },
+  
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Personal Chat Room ",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "developing admin features for team chatting, ensuring full data access, alongside a robust dashboard for management",
+    tags: ["React", "MongoDB", "Matrial MUI", "Socket.io", "Node.js","Framer"],
+    imageUrl: ChattingImg,
+    projectUrl:"https://github.com/vikasutf8/Real-Estate-Project",
+    codeUrl:"https://github.com/vikasutf8/Real-Estate-Project",
+    videoLink:"",
   },
   {
-    title: "rmtDev",
+    title: "Real Estate Housing",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "It is E-commerce website in which user login as Admin to sell own property and Buy/Rent with offered prizing.",
+    tags: ["React","Redux", "Node.js", "MongoDB", "Express", "Tailwind"],
+    imageUrl: RealEstateImg,
+    projectUrl:"https://github.com/vikasutf8/Real-Estate-Project",
+    codeUrl:"https://github.com/vikasutf8/Real-Estate-Project",
+    videoLink:"",
   },
   {
-    title: "Word Analytics",
+    title: "My Blogging App",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A public web app where users can write and publish articles. Users can also view articles written by other users.",
+    tags: [ "Next.js", "Prisma", "Tailwind", "MongoDB",],
+    imageUrl: Blogging,
+    projectUrl:"https://github.com/vikasutf8/Real-Estate-Project",
+    codeUrl:"https://github.com/vikasutf8/Real-Estate-Project",
+    videoLink:"",
+  },
+  {
+    title: "Online Book House",
+    description:
+      "A fronted project where user can buy books online and also can see the details of the book and also can see the reviews of the book.",
+    tags: [ "React", "Redux", "Tailwind"],
+    imageUrl: BookHouse,
+    projectUrl:"https://onlinebookstore-icw6pa5gm-vikasutf8s-projects.vercel.app/",
+    codeUrl:"https://github.com/vikasutf8/Real-Estate-Project",
+    videoLink:"",
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
+  "C/C++",
   "JavaScript",
-  "TypeScript",
-  "React",
+  "HTML5",
+  "CSS",
   "Next.js",
+  "React.js",
   "Node.js",
-  "Git",
-  "Tailwind",
+  "Express.js",
+  "Redux",
+  "Tailwind CSS",
+  "Framer Motion",
   "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
+  "MySQL",
   "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "Git & GitHub",
+  "Docker",
+  "Postman",
 ] as const;
